@@ -54,9 +54,9 @@ app.use(express.static(path.join(__dirname, 'dist/client')));
 app.use('/', express.static(path.join(__dirname, 'dist')));
 
 app.use('/about',about );
-app.use('/contact',contactRoute);
-app.use('/donate/:id', donationRoute);
-app.use('/dashboard', dashboardRoute);
+//app.use('/contact',contactRoute);
+//app.use('/donate/:id', donationRoute);
+//app.use('/dashboard', dashboardRoute);
 
 
 // catch 404 and forward to error handler

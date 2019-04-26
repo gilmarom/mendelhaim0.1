@@ -6,8 +6,8 @@
 <div>Donate</div>
 <br>
 <button class="donate" title="Donate"><a routerLink="/donate/{{research.id}}"
-                                          [class.selected]="research === selectedResearches"
-                                          (click)="onSelect(research)"  ><img src='assets/donate.png' width="48" height="48"></a></button>  
+                                          
+                                           ><img src='assets/donate.png' width="48" height="48"></a></button>  
 
 <div *ngIf="research" >
   <div>

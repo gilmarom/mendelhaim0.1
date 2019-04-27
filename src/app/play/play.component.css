@@ -61,10 +61,10 @@ img.credit{ width: 200px; position:relative; bottom: 0; }
 }
 #player{}
 .play{
-    position: absolute;
+    position: relative;
     width: 50px;
-    left: 350px; 
-    margin-top:23px; 
+   
+     
     border-radius: 50%;
     background-color: #ec2c22;
     border: 1px solid white; 
@@ -107,7 +107,6 @@ img.credit{ width: 200px; position:relative; bottom: 0; }
    
     .play{
             width: 40px;
-            left: 250px;
             
      }
      .brief p{

@@ -17,7 +17,7 @@ export class PodcastComponent implements OnInit {
   ngOnInit() {
        this.podcasts = [
       {id:1, name: 'The lottery of life', particpate: 'Dr Anat Chesner-haviv'},
-      {id:2, name:'Under Pressure',particpate: 'Dr Scott sheer'},
+      {id:2, name:'Under Pressure',particpate: 'Dr Scott Sherr'},
       {id:3, name:'Integrated Wisdom',particpate: ''}, 
       {id:4, name:'Coming soon!',particpate: ''},
       {id:5, name:'Coming soon!',particpate: ''}]

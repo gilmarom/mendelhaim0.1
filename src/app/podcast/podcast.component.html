@@ -1,22 +1,23 @@
 
 
-
-
 <img class="starman" src='assets/david-bowie.png'>
 
 <div style='background-color: #ec2c22; height:100%;width:100%;margin:0;'>
   <div class="post-list">            
     <div class="list-item" *ngFor="let pod of podcasts">
+      <br>
       <div>
-        <a routerLink="/podcast/{{pod.id}}"> 
-        <h2 class="list-item-title"> <span>Rise of The Ageless Starman</span><img class="slide"  src='assets/play-white.png'></h2>            
-        <p>Episode {{pod.id}}: {{ pod.particpate }} - {{pod.name}}</p>
+        <a routerLink="/podcast/{{pod.id}}">
+         
+        <h3 class="list-item-title"> Episode {{pod.id}}</h3><h3 style="font-size:50px;">{{pod.name}} - {{ pod.particpate }}</h3>            
+        <h4>Rise Of The Ageless Starman</h4>
         </a>
       </div>   
     </div>    
   </div>
 </div>
 
+ 
  
  
  

@@ -34,7 +34,7 @@ export class PlayComponent implements OnInit {
      
     else
       this.button_name = "Show Login Form!";
-      this.image ="../assets/pause.png";
+      this.image ="../assets/pause48.png";
       
   }
   getPodcast(): void {

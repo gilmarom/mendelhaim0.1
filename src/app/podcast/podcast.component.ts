@@ -19,7 +19,7 @@ export class PodcastComponent implements OnInit {
       {id:1, name: 'The lottery of life', particpate: 'Dr Anat Chesner-haviv'},
       {id:2, name:'Under Pressure',particpate: 'Dr Scott Sherr'},
       {id:3, name:'Mission Alpha',particpate: 'Sergey Young'}, 
-      {id:4, name:'Coming soon!',particpate: ''},
+      {id:4, name:'Heaven on Earth',particpate: 'James Strole'},
       {id:5, name:'Coming soon!',particpate: ''}]
   }
 

@@ -1,14 +1,14 @@
  
 <div class="bg" [ngStyle]=" {'background':podcast.background}"*ngIf="podcast">
-     <h2 class="main">Rise of The Ageless Starman</h2> 
+     <h2 class="main"> {{ podcast.name}} <br>
+     <div><a style="font-size:16px;" href="{{podcast.pod}}" download="The Ageless Starman - {{ podcast.name }}">Download episode</a> </div>
+     </h2> 
      
      <img src='{{podcast.pic}}'>
      <div class="details">
-        <p>Episode {{podcast.id}}: {{ podcast.name}}<br> With {{ podcast.particpate }}</p>        
-        
-           <div> <span><a (click)="toggle()"><img class='play' [src]="image" ></a></span>  </div>  
-
-    </div>  
+        <p>The Rise Of The Ageless Starman<br> Episode {{podcast.id}}<br> Guest: {{ podcast.particpate }}</p>
+        <span><a (click)="toggle()"><img class='play' [src]="image" ></a></span> 
+    </div>     
 </div>
 <div *ngIf="podcast" class="brief" id='player'> 
       <div *ngIf="show_dialog">
@@ -21,7 +21,7 @@
       <br><br>
       <p>{{ podcast.brief }}</p>
        <img class='credit' src='{{podcast.credit}}'> 
-  </div>
+</div>
     
   
  

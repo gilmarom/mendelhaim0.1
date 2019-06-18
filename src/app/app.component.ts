@@ -18,4 +18,10 @@ export class AppComponent {
     this.http.get('assets/data/app.json').subscribe((data)=>this.a =data)
     
   }
+    onActivate(event) {
+    window.scroll(0,0);
+    //or document.body.scrollTop = 0;
+    //or document.querySelector('body').scrollTo(0,0)
+    
+}
 }

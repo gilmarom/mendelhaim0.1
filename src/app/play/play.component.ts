@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { PodcastService} from '../podcast.service';
 import { Podcast } from '../podcast';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-play',
@@ -18,7 +19,8 @@ export class PlayComponent implements OnInit {
   constructor( 
     private location:Location,
     private route: ActivatedRoute,
-    private podcastService: PodcastService
+    private podcastService: PodcastService,
+    private domSanitizer : DomSanitizer 
   ) {}
 
   ngOnInit() {
@@ -41,6 +43,8 @@ export class PlayComponent implements OnInit {
     const id = +this.route.snapshot.paramMap.get('id');
     this.podcastService.getPodcast(id)
       .subscribe( podcast => this.podcast = podcast);
+    this.url= this.domSanitizer.bypassSecurityTrustResourceUrl(this.podcast.pod);
+
   }
  
   goBack(): void {

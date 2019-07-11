@@ -1,24 +1,29 @@
  
 <div class="bg" [ngStyle]=" {'background':podcast.background}"*ngIf="podcast">
-     <h2 class="main"> {{ podcast.name}} <br>
-     </h2> 
+     <div class="main"  data-aos="fade-up">
+        {{ podcast.name}} 
+     </div> 
      
-     <img src='{{podcast.pic}}'>
+     <img src='{{podcast.pic}}'  data-aos="fade-up" data-aos-delay="1000"  data-aos-duration="2000">
      <div class="details">
-        <p>The Rise Of The Ageless Starman<br> Episode {{podcast.id}}<br> Guest: {{ podcast.particpate }}</p>
-        <span><a (click)="toggle()"><img class='play' [src]="image" ></a></span> 
+        <p  data-aos="fade-up" data-aos-delay="300"  data-aos-duration="1500">The Rise Of The Ageless Starman<br> Episode {{podcast.id}}<br> Guest: {{ podcast.particpate }}</p>
+        <span><a (click)="toggle()" href="podcast/{{podcast.id}}#player"><img class='play' [src]="image" ></a></span> 
     </div>     
 </div>
-<div *ngIf="podcast" class="brief" id='player'> 
-   <div style="height:150px;"></div>      
-   <div *ngIf="show_dialog">
-          <iframe title='' [src]="url" data-link='https://www.podbean.com/media/player/wjfci-b6a134?from=yiiadmin&download=1&version=1' allow="autoplay" height='122' width='80%' style='border: none;' scrolling='no' data-name='pb-iframe-player' ></iframe>
-   </div>  
-   <br><br><br> 
-   <p><strong>{{ podcast.particpate}}</strong> - {{ podcast.pro}} </p>
-   <br><br>
-   <p>{{ podcast.brief }}</p>
-   <img class='credit' src='{{podcast.credit}}'> 
+
+<div *ngIf="podcast" class="brief" id='player'>
+      <div style="height:150px;"></div>
+        
+      <div *ngIf="show_dialog">
+   <iframe  title='' [src]="url" data-link='https://www.podbean.com/media/player/wjfci-b6a134?from=yiiadmin&download=1&version=1'  allow="autoplay" height='122' width='80%' style='border: none;' scrolling='no' data-name='pb-iframe-player' ></iframe>
+
+     </div>  
+      <br><br>  <br> 
+      <p><strong>{{ podcast.particpate}}</strong> - {{ podcast.pro}} </p>
+      <br><br>
+      <p>{{ podcast.brief }}</p>
+       <img class='credit' src='{{podcast.credit}}'> 
+
 </div>
     
   

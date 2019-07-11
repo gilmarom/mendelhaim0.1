@@ -1,22 +1,28 @@
 
 
-<img class="starman" src='assets/david-bowie.png'>
+<img class="starman" src='assets/bowie.png'>
+
 
 <div style='background-color: #ec2c22; height:100%;width:100%;margin:0;'>
+  <br>
   <div class="post-list">            
-    <div class="list-item" *ngFor="let pod of podcasts">
-      <br>
-      <div>
+    <div class="list-item" *ngFor="let pod of podcasts" >
+     
+      <div  data-aos="fade-up"  data-aos-duration="500" data-aos-easing="linear">
         <a href="/podcast/{{pod.id}}">
          
-        <h4 class="list-item-title"> Episode {{pod.id}}</h4><h4 style="font-size:50px;">{{pod.name}} - {{ pod.particpate }}</h4>            
+        <h3 class="list-item-title"> Episode {{pod.id}}</h3><h3 style="font-size:50px;">{{pod.name}} - {{ pod.particpate }}</h3>            
         <h4>Rise Of The Ageless Starman</h4>
         </a>
       </div>   
     </div>    
   </div>
+  
 </div>
 
+ 
+ 
+ 
  
  
  

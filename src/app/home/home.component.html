@@ -11,9 +11,13 @@
               </div> 
            </header> 
            <a href='/podcast'><div class="header-overlay" style="background-color: #66ffff;opacity:0.5;" ></div></a>
-         <div id='text'><a href='/podcast'> <div  data-aos="fade-up"  data-aos-duration="2500" style="font-family: Arial, Helvetica, sans-serif">
-               {{carousela[0].text}}</div><br>
-             <div id='butText' data-aos="fade-up"  data-aos-duration="3000">{{ carousela[0].buttonText }}</div></a>      
+         <div id='text'><a href='/podcast'>
+            <div id='butText' data-aos="fade-up"   data-aos-duration="2000">{{ carousela[0].buttonText }}
+            </div>
+            <div  data-aos="fade-up"  data-aos-duration="2500" style="font-family: Arial, Helvetica, sans-serif">
+               {{carousela[0].text}}
+            </div><br>
+            </a>      
          </div>
      </ng-template>
      <ng-template ngbSlide style="position:absolute;">

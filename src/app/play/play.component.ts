@@ -13,6 +13,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 export class PlayComponent implements OnInit {
   @Input() podcast: Podcast;
+   url;
   public show_dialog : boolean = false;
   public button_name : any = 'Show Login Form!';
   public image: string= '../assets/play-white.png';

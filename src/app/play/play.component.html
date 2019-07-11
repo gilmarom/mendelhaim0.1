@@ -13,7 +13,7 @@
 <div *ngIf="podcast" class="brief" id='player'> 
    <div style="height:150px;"></div>      
    <div *ngIf="show_dialog">
-          <iframe title='' [src]="url" data-link='https://www.podbean.com/media/player/wjfci-b6a134?from=yiiadmin&download=1&version=1' height='122' width='80%' style='border: none;' scrolling='no' data-name='pb-iframe-player' ></iframe>
+          <iframe title='' [src]="url" data-link='https://www.podbean.com/media/player/wjfci-b6a134?from=yiiadmin&download=1&version=1' allow="autoplay" height='122' width='80%' style='border: none;' scrolling='no' data-name='pb-iframe-player' ></iframe>
    </div>  
    <br><br><br> 
    <p><strong>{{ podcast.particpate}}</strong> - {{ podcast.pro}} </p>

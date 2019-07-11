@@ -1,31 +1,31 @@
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-
-<div  *ngIf="carousela" >
+<div *ngIf="carousela">
   <ngb-carousel>        
     <ng-template ngbSlide class="v-header container">
             <header class="v-header container">               
               <div class="fullscreen-video-wrap">    
-              <video autoplay='true' loop='loop'  [muted]='true' >
+              <video autoplay='true' loop='loop'  [muted]='true'  data-aos-duration="500" >
                 <source src="../assets/Space.mp4"  type="video/mp4">
               </video>
               </div> 
            </header> 
-           <a routerLink='/podcast'><div class="header-overlay" style="background-color: #66ffff;opacity:0.5;" ></div></a>
-         <div id='text'><a routerLink='/podcast'> <div >
+           <a href='/podcast'><div class="header-overlay" style="background-color: #66ffff;opacity:0.5;" ></div></a>
+         <div id='text'><a href='/podcast'> <div  data-aos="fade-up"  data-aos-duration="2500" style="font-family: Arial, Helvetica, sans-serif">
                {{carousela[0].text}}</div><br>
-             <div id='butText'>{{ carousela[0].buttonText }}<img class="play" src="assets/play-white.png"></div></a>      
+             <div id='butText' data-aos="fade-up"  data-aos-duration="3000">{{ carousela[0].buttonText }}</div></a>      
          </div>
      </ng-template>
      <ng-template ngbSlide style="position:absolute;">
             <header class="v-header container">               
-              <div  class="fullscreen-video-wrap">    
-              <video autoplay='true' loop='loop'  [muted]='true' >
+              <div class="fullscreen-video-wrap">    
+              <video autoplay='true' loop='loop'  [muted]='true' data-aos-duration="500"  >
                 <source src="../assets/hyperberic.mp4"  type="video/mp4">
               </video>
               </div> 
             </header> 
-            <a routerLink='/podcast/2'><div class="header-overlay" style="background-color: #0A2B30;opacity:0.8;" ></div></a>
-            <div id='text'> <a routerLink='/podcast/2'> <div>
+            <a href='/podcast/2'><div class="header-overlay" style="background-color: #0A2B30;opacity:0.8;" ></div></a>
+            <div id='text'> <a href='/podcast/2'> <div data-aos="zoom-in">
                {{carousela[1].text}}</div><br>
                <div id='butText'>{{ carousela[1].buttonText }}<img class="play" src="assets/play-white.png"></div>  
                </a>    
@@ -35,8 +35,8 @@
         <ng-template ngbSlide style="position:absolute;">
         
            <header class="v-header container">               
-              <div  class="fullscreen-video-wrap">   
-            <video autoplay='true' loop='loop'  [muted]='true' >
+              <div class="fullscreen-video-wrap">   
+            <video autoplay='true' loop='loop'  [muted]='true'  data-aos-duration="500" >
                 <source src="../assets/cell.mp4"  type="video/mp4" style="transform: scale(1.05);">
              </video>
           </div>
@@ -45,14 +45,14 @@
          
          <div id='text'>
             <a href='/about'>
-           <div>
+           <div data-aos="zoom-in" >
                {{carousela[2].text}}</div><br>
-             <div id='butText'>{{ carousela[2].buttonText }}<span><img class="play" src="assets/play-white.png"></span></div>
+             <div id='butText'>{{ carousela[2].buttonText }}<span></span></div>
             </a> 
              </div>   
            
         </ng-template>
-     <!--   <ng-template ngbSlide style="position:absolute;">
+        <ng-template ngbSlide style="position:absolute;">
          <header class="v-header container">               
               <div  class="fullscreen-video-wrap">             
                    <video  autoplay='true' loop='loop' [muted]='true' >
@@ -60,14 +60,19 @@
                    </video>
               </div>
          </header>
-         <a  routerLink='/research'>  <div class="header-overlay" style="background-color: #66ffff;opacity:0.5;"></div></a>
-         <div id='text'>  <a routerLink='/research'><div>
+         <a  href='/research'>  <div class="header-overlay" style="background-color: #66ffff;opacity:0.5;"></div></a>
+         <div id='text'>  <a href='/research'><div>
                {{carousela[3].text}}</div><br>
-             <div id='butText'>{{ carousela[3].buttonText }}<span><img class="play" src="assets/play-white.png"></span></div></a></div>   
-        </ng-template>!-->
-        </ngb-carousel>
+             <div id='butText'>{{ carousela[3].buttonText }}<span></span></div></a></div>   
+        </ng-template></ngb-carousel>
 </div>
-
+<script>
+  AOS.init();
+</script>
+<script type="text/javascript" src="skrollr.min.js"></script>
+    <script type="text/javascript">
+    var s = skrollr.init();
+    </script>
 <!--<div class="container">
   <div class="row">
     <div class="col-md-2">

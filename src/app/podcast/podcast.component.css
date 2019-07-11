@@ -91,13 +91,24 @@ a{
 .body{
     background-color: #ec2c22;
 }
+
+.mic{
+    position:fixed;
+    top:10%;
+    left: 30%;
+    z-index: 0;
+    height: 90%;
+    opacity: 1;
+}
+
+
 .starman{
   
     position:fixed;
-    top:12%;
-    left: 30%;
+    top:15%;
+    left: 40%;
     z-index: 0;
-    height: 75%;
+    height: 60%;
     opacity: 0.3;
 
 } 

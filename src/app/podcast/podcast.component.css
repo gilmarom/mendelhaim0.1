@@ -170,7 +170,7 @@ h3{
     }
     .mic{
     position:fixed;
-    top:10%;
+    top:30%;
     left: 30%;
     z-index: 0;
     height: 70%;

@@ -168,7 +168,14 @@ h3{
     height: 70%;
     width: 200px;
     }
-
+    .mic{
+    position:fixed;
+    top:10%;
+    left: 30%;
+    z-index: 0;
+    height: 70%;
+    opacity: 1;
+}
     .pic {
      background-color:#DEB887;height:15%;width:100%;opacity: 0.1;
     }  

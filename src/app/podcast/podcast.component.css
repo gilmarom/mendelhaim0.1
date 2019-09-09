@@ -171,9 +171,9 @@ h3{
     .mic{
     position:fixed;
     top:30%;
-    left: 35%;
+    left: 40%;
     z-index: 0;
-    height: 70%;
+    height: 60%;
     opacity: 1;
 }
     .pic {
